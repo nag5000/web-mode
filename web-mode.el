@@ -8045,7 +8045,7 @@ Also return non-nil if it is the command `self-insert-command' is remapped to."
          ;; tests/demo.chtml
          ((string= web-mode-engine "ctemplate")
           (save-excursion
-            (when (web-mode-rsf "{{#?")
+            (when (web-mode-rsf "{{")
               (setq reg-col (current-column))))
           )
          ((string= web-mode-engine "dust")
